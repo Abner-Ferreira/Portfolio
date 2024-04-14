@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import styles from "./button.module.css"
-import pdf from "../../assets/docs/Abner's CV.pdf"
+import pdfEn from "../../assets/docs/Abner's CV - en.pdf"
+import pdfPt from "../../assets/docs/Abner's CV - pt.pdf"
 import { PortfolioContext } from '../../contexts/PortfolioContexto';
 
 import emailjs from "@emailjs/browser"
@@ -73,7 +74,7 @@ function Button({ title, variant, icon, link }) {
                     variant === "outline download" ?
 
                         <button className={styles.buttonOutline}>
-                            <a href={pdf} download={true} title="Abner's CV" id={styles.download}>
+                            <a href={title === "Download CV" ? pdfEn : title === "Baixar currículo" ? pdfPt : ""} download={true} title="Abner's CV" id={styles.download}>
 
                                 {title} {icon ? icon : ""}
                             </a>
