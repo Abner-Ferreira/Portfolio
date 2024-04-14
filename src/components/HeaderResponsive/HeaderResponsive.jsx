@@ -38,9 +38,9 @@ function ResponsiveAppBar() {
 
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color='transparent' >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters >
 
           {/* CELL */}
           <Typography
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="default"
             >
               <MenuIcon />
             </IconButton>
@@ -107,21 +107,7 @@ function ResponsiveAppBar() {
                 </NavLink>
               </MenuItem>
               
-              {/* <MenuItem onClick={handleCloseNavMenu}>
-                <NavLink to="/services" className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }>
-                  {t("servicesHeader")}
-                </NavLink>
-              </MenuItem> */}
-              <MenuItem onClick={handleCloseNavMenu}>
-                <NavLink to="/skills" className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }>
-                  {t("skillsHeader")}
-                </NavLink>
-              </MenuItem>
-
+             
               <MenuItem onClick={handleCloseNavMenu}>
                 <NavLink to="/portfolio" className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""
