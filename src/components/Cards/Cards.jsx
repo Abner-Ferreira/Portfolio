@@ -17,7 +17,7 @@ function Cards() {
                 <p>{projeto.name}</p>
                 <div className={styles.miniLang}>
                   {projeto.technologies.map(tech => (
-                    <img src={tech.src} alt={tech.name} title={tech.name} />
+                    <img src={tech.src} alt={tech.name} title={tech.name} key={tech.name}/>
                   ))}
                 </div>
               </div>

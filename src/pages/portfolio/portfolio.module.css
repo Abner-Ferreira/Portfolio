@@ -1,7 +1,13 @@
 .containerPortfolio{
     width: 100vw;
+    overflow-x: scroll;
     display: grid;
     grid-template-columns: auto auto;
+}
+.containerPortfolio::-webkit-scrollbar{
+    background-color: #9999;
+    width: 3px;
+    
 }
 
 .cardContainer{

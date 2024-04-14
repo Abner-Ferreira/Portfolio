@@ -1,5 +1,7 @@
 import cinetag from "../assets/projects-img/cinetag.png"
 import productPage from "../assets/projects-img/product-page.png"
+import pokedex from "../assets/projects-img/pokedex.png"
+import instagram from "../assets/projects-img/instagram.png"
 
 // import technologies
 import reactLogo from '../assets/technologies/react-logo.svg'
@@ -63,12 +65,58 @@ export const projects = [
         name: 'Css 3',
         src: cssLogo
       },
-      {
-        name: 'Vite',
-        src: viteLogo
-      },
     ],
     github: "https://github.com/Abner-Ferreira/product-page",
     link: "https://corinthians-shirt-product-page.vercel.app/"
+  }, 
+  {
+    name: "Pokedex",
+    date: "28-01-2024",
+    image: pokedex,
+    technologies: [
+      {
+        name: 'Next JS',
+        src: nextLogo
+      },
+      {
+        name: 'Javascript',
+        src: javascriptLogo
+      },
+      {
+        name: 'Html 5',
+        src: htmlLogo
+      },
+      {
+        name: 'Css 3',
+        src: cssLogo
+      },
+    ],
+    github: "https://github.com/Abner-Ferreira/pokedex",
+    link: "https://abner-pokedex.vercel.app/"
+  }, 
+  {
+    name: "Login Instagram",
+    date: "06-10-2022",
+    image: instagram,
+    technologies: [
+      {
+        name: 'React JS',
+        src: reactLogo
+      },
+      {
+        name: 'Javascript',
+        src: javascriptLogo
+      },
+      {
+        name: 'Html 5',
+        src: htmlLogo
+      },
+      {
+        name: 'Css 3',
+        src: cssLogo
+      },
+    ],
+    github: "https://github.com/Abner-Ferreira/instagram",
+    link: "https://login-intagram-non-responsive.vercel.app/"
   }, 
 ]
