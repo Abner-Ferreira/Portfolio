@@ -1,0 +1,12 @@
+.containerPortfolio{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

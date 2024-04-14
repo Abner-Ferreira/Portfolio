@@ -1,0 +1,96 @@
+.containerAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100vw;
+    height: 100%;
+}
+
+.containerImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 50px 0;
+}
+
+.containerImg img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.containerIntroduction {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 14px;
+    gap: 40px;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+@media (min-width: 800px) {
+    .containerAbout {
+        height: 90vh;
+        gap: 50px;
+        flex-direction: row;
+    }
+
+    .containerImg {
+        width: 30%;
+        margin: 20px 0;
+    }
+    .containerImg img{
+        animation: jumpImg 7s ease infinite;
+    }
+
+    .containerIntroduction {
+        font-size: 18px;
+        width: 50%;
+        gap: 20px;
+    }
+}
+
+
+
+@media (min-width: 1300px) {
+    .containerAbout {
+        gap: 0;
+    }
+
+
+    .containerImg {
+        height: 50%;
+        max-width: 600px;
+    }
+
+    .containerImg img {
+        max-height: 400px;
+        max-width: 400px;
+        
+    }
+
+    .containerIntroduction {
+        height: 50%;
+        width: 50%;
+        gap: 40px;
+    }
+
+    .containerIntroduction p {
+        width: 80%;
+    }
+}
+
+
+@keyframes jumpImg {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-70px);}
+	60% {transform: translateY(-15px);}
+}

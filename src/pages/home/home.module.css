@@ -1,0 +1,290 @@
+.containerHome {
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.containerInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10%;
+    text-align: left;
+}
+
+#name {
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+.divImg {
+    display: none;
+}
+
+.apresentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.writing {
+    width: 100%;
+    margin: 20px 0 30px 50px;
+    font-size: 26px;
+}
+
+.introduction {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    text-align: justify;
+}
+
+
+
+.divBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.divSociais {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.divSociais a {
+    text-align: center;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0 40px 5%;
+    border-bottom: 1px solid #fff;
+}
+
+.icon {
+    height: 20px;
+    margin: 10px 20px;
+}
+
+@media (min-width: 700px) {
+    .apresentation {
+        width: 100%;
+        margin-left: 130px;
+    }
+
+    .writing {
+        width: 100%;
+        margin-left: 130px;
+    }
+
+    .introduction {
+        width: 90%;
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+    .divSociais a {
+        font-size: 18px;
+        color: #fff;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1400px) {
+    .apresentation {
+        width: 80%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 130px;
+    }
+
+    .apresentation h1{
+        margin: 10px 0;
+    }
+
+    .writing {
+        width: 80%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 130px;
+    }
+
+    .introduction {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 22px;
+        margin-bottom: 30px;
+        margin-left: -35px ;
+        text-align: justify;
+        text-wrap: wrap;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .containerHome {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        user-select: none;
+    }
+
+    .containerInfo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-size: 26px;
+        line-height: 160%;
+        text-align: left;
+        margin-top: 0%;
+    }
+
+    #name {
+        margin-top: -10px;
+    }
+
+    .divImg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divImg img {
+        height: 90%;
+        margin-top: 90px;
+        user-select: none;
+
+    }
+
+    .apresentation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .apresentation h1{
+        margin: 30px 0;
+    }
+
+    .writing {
+        width: 100%;
+        margin: 50px 0 50px 330px;
+        font-size: 40px;
+    }
+
+    .introduction {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .introduction p {
+        margin-left: 195px;
+    }
+
+    .apresentation h1 {
+        width: 100%;
+        margin-left: 100px;
+    }
+
+
+    .divBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+
+    .divSociais {
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-left: 100px;
+    }
+
+    .divSociais a {
+        text-align: center;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: underline;
+        font-size: 16px;
+        color: #fff;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .iconContainer {
+        max-width: 80%;
+        width: 60%;
+    }
+
+    .icon {
+        height: 20px;
+        margin: 0 10px;
+    }
+
+    .icon:hover {
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+
+}

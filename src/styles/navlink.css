@@ -1,0 +1,9 @@
+.active {
+    border-bottom: 1px solid #fff;
+    color: #999 !important;
+}
+
+.pending {
+    color: #999 !important;
+    
+}

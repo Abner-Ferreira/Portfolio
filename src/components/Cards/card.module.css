@@ -1,0 +1,156 @@
+.containerCard {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    gap: 3.75rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCard .card {
+    transition: 0.3s;
+    min-width: 30%;
+    width: 30%;
+
+}
+
+.containerCard .card:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 2
+}
+
+.containerCard .card .cover {
+    position: relative;
+    cursor: pointer
+}
+
+.containerCard .card .cover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    bottom: 0.1rem;
+    background-image: linear-gradient(90deg, #FFDE17 0%, #ffdc174d 92.32%)
+}
+
+.containerCard .card .cover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65)
+}
+
+.containerCard .card .cover .details {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.containerCard .card .cover .details p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #F9F9F9;
+    margin-bottom: 1rem
+}
+.containerCard .card .cover > img{
+    width: 100%
+}
+
+.miniLang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.miniLang img{
+    width: 10px;
+    height: 10px;
+}
+
+.moreDetails {
+    background-color: #050505;
+    padding: .5rem 2rem;
+    display: none;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 2rem 2rem;
+    cursor: pointer
+}
+
+.moreDetails span {
+    color: #999;
+}
+
+.moreDetails a{
+    display: inline-block;
+    width: fit-content;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid #FFDE17;
+    border-radius: 2rem;
+    animation: backgroundScale 1s 0.5s forwards
+}
+
+.card:hover .moreDetails{
+    display: flex;
+    animation: showDown 0.5s forwards;
+    z-index: -50
+}
+
+@media (min-width: 800px){
+    .containerCard {
+        flex-direction: row;
+    }
+
+    .containerCard .card .cover::before {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65)
+    }
+
+    .containerCard .card .cover .details p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .miniLang img{
+        width: auto;
+        height: auto;
+    }
+}
+@media (min-width: 1300px){
+    .containerCard .card .cover .details p{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+
+
+@keyframes showDown {
+    from {
+        opacity: 0;
+        transform: translateY(-200%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
