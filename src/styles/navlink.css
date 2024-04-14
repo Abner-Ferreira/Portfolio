@@ -5,5 +5,23 @@
 
 .pending {
     color: #999 !important;
-    
+
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: transparent !important;
+}
+
+.css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    color: #999999;
+}
+
+.css-1q39md6-MuiButtonBase-root-MuiButton-root:active {
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 900px) {
+    .css-1t6c9ts {
+        justify-content: space-evenly;
+    }
 }

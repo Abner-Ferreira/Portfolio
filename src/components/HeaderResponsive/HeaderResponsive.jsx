@@ -15,7 +15,7 @@ import { NavLink } from 'react-router-dom';
 import logo from "../../assets/logo4.png";
 import LanguageSwitcher from '../LanguageSwitcher';
 import "../../styles/navlink.css";
-import "./style.css";
+import "./header.css";
 
 function ResponsiveAppBar() {
 
