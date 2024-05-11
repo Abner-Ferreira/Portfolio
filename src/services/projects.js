@@ -2,6 +2,7 @@ import cinetag from "../assets/projects-img/cinetag.png"
 import productPage from "../assets/projects-img/product-page.png"
 import pokedex from "../assets/projects-img/pokedex.png"
 import instagram from "../assets/projects-img/instagram.png"
+import tipCalculator from "../assets/projects-img/tipCalculator.png"
 
 // import technologies
 import reactLogo from '../assets/technologies/react-logo.svg'
@@ -19,6 +20,35 @@ import bootstrapLogo from '../assets/technologies/bootstrap-logo.svg'
 
 
 export const projects = [
+  {
+    name: "Tip Calculator",
+    date: "11-05-2024",
+    image: tipCalculator,
+    technologies: [
+      {
+        name: 'Vite',
+        src: viteLogo
+      },
+      {
+        name: 'React JS',
+        src: reactLogo
+      },
+      {
+        name: 'Javascript',
+        src: javascriptLogo
+      },
+      {
+        name: 'Html 5',
+        src: htmlLogo
+      },
+      {
+        name: 'Css 3',
+        src: cssLogo
+      },
+    ],
+    github: "https://github.com/Abner-Ferreira/Tip-calculator/tree/main/tip",
+    link: "https://tip-calculator-abner.vercel.app/"
+  }, 
   {
     name: "Cinetag",
     date: "02-05-2023",
