@@ -3,6 +3,7 @@ import productPage from "../assets/projects-img/product-page.png"
 import pokedex from "../assets/projects-img/pokedex.png"
 import instagram from "../assets/projects-img/instagram.png"
 import tipCalculator from "../assets/projects-img/tipCalculator.png"
+import adviceGenerator from "../assets/projects-img/adviceGenerator.png"
 
 // import technologies
 import reactLogo from '../assets/technologies/react-logo.svg'
@@ -20,6 +21,35 @@ import bootstrapLogo from '../assets/technologies/bootstrap-logo.svg'
 
 
 export const projects = [
+  {
+    name: "Advice Generator",
+    date: "12-05-2024",
+    image: adviceGenerator,
+    technologies: [
+      {
+        name: 'Vite',
+        src: viteLogo
+      },
+      {
+        name: 'React JS',
+        src: reactLogo
+      },
+      {
+        name: 'Javascript',
+        src: javascriptLogo
+      },
+      {
+        name: 'Html 5',
+        src: htmlLogo
+      },
+      {
+        name: 'Css 3',
+        src: cssLogo
+      },
+    ],
+    github: "https://github.com/Abner-Ferreira/AdviceGenerator",
+    link: "https://advice-generator-abner.vercel.app/"
+  }, 
   {
     name: "Tip Calculator",
     date: "11-05-2024",
