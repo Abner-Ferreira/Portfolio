@@ -4,6 +4,7 @@ import pokedex from "../assets/projects-img/pokedex.png"
 import instagram from "../assets/projects-img/instagram.png"
 import tipCalculator from "../assets/projects-img/tipCalculator.png"
 import adviceGenerator from "../assets/projects-img/adviceGenerator.png"
+import easybank from "../assets/projects-img/easybank.png"
 
 // import technologies
 import reactLogo from '../assets/technologies/react-logo.svg'
@@ -21,6 +22,35 @@ import bootstrapLogo from '../assets/technologies/bootstrap-logo.svg'
 
 
 export const projects = [
+  {
+    name: "Easy Bank",
+    date: "31-05-2024",
+    image: easybank,
+    technologies: [
+      {
+        name: 'Vite',
+        src: viteLogo
+      },
+      {
+        name: 'React JS',
+        src: reactLogo
+      },
+      {
+        name: 'Javascript',
+        src: javascriptLogo
+      },
+      {
+        name: 'Html 5',
+        src: htmlLogo
+      },
+      {
+        name: 'Css 3',
+        src: cssLogo
+      },
+    ],
+    github: "https://github.com/Abner-Ferreira/EasyBank",
+    link: "https://abner-easy-bank.vercel.app/"
+  }, 
   {
     name: "Advice Generator",
     date: "12-05-2024",
