@@ -51,7 +51,7 @@ function Button({ title, variant, icon, link }) {
                 document.getElementById("cancelButton").click()
                 // navigate("/")
             })
-            .catch(() => toast.error("Error to send the email, please try again ", {
+            .catch((err) => toast.error(`Error to send the email, please try again ${err}`, {
                 style: {
                     fontSize: "18px"
                 }
